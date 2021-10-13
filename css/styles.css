@@ -612,14 +612,14 @@ body {
 .footer-adress-item:not(:last-child){
     margin-bottom: 9px;
 }
-.footer-text{
+.footer-text, .signup-title {
     font-style: normal;
     font-weight: bold;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-title-color);
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .footer-social-list{
@@ -652,10 +652,76 @@ body {
 .footer-info{
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
 }
-.footer-left{
-    margin-right: 70px;
+.signup-form{
+    display: flex;
 }
+.signup-input {
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--background-main-color);
+
+    padding: 15px;
+    margin-right: 15px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.signup-btn{
+    width: 200px;
+    height: 50px;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    
+    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.footer-icon-send{
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
+    margin-left: 10px;
+}
+.signup-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+.signup-input:focus,
+.signup-input:focus {
+    border-color: #ffffff;
+    background-color: transparent;
+}
+
+.signup-input:focus::placeholder,
+.signup-input:focus::placeholder {
+    color: #ffffff;
+}
+
 /*--------------модалка-------------*/
 .backdrop {
     position: fixed;
