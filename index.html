@@ -460,7 +460,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidde" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 
             <button type="button" 
@@ -479,28 +479,43 @@
                 <div class="modal-field">
                     <label for="user-name" class="input-label"
                     >Имя</label>
-                    <input type="text"
-                    name="user-name"
-                    id="user-name"
-                    class="modal-input">
+                    <span class="input-wrapper">
+                        <input type="text"
+                        name="user-name"
+                        id="user-name"
+                        class="modal-input">
+                        <svg class="input-icon">
+                            <use href="./images/sprite.svg#icon-person-black">
+                        </svg>
+                    </span>
                 </div>
 
                 <div class="modal-field">
                     <label for="user-tel" class="input-label"
                     >Телефон</label>
-                    <input type="tel"
-                    name="user-tel"
-                    id="user-tel"
-                    class="modal-input">
+                    <span class="input-wrapper">
+                        <input type="tel"
+                        name="user-tel"
+                        id="user-tel"
+                        class="modal-input">
+                        <svg class="input-icon">
+                            <use href="./images/sprite.svg#icon-phone-black">
+                        </svg>
+                    </span>
                 </div>
 
                 <div class="modal-field">
                     <label for="email" class="input-label"
                     >Почта</label>
-                    <input type="email"
-                    name="email"
-                    id="email"
-                    class="modal-input">
+                    <span class="input-wrapper">
+                        <input type="email"
+                        name="email"
+                        id="email"
+                        class="modal-input">
+                        <svg class="input-icon">
+                            <use href="./images/sprite.svg#icon-email-black">
+                        </svg>
+                    </span>
                 </div>
 
                 <div class="modal-field">
@@ -514,12 +529,22 @@
                     ></textarea>
                 </div>
 
+                <input type="checkbox" id="modal-checkbox" class="modal-checkbox visually-hidden">
+                <label for="modal-checkbox" class="check-text">
+                    <span> 
+                        <svg class="check-icon">
+                            <use href="./images/sprite.svg#icon-check">
+                        </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a>
+                </label>
+
                 <button type="submit" class="btn modal-btn">
                     Отправить
                 </button>
             </form>
         </div>
     </div>
-    <!----<script src="./js/modal.js"></script>--->
+    <script src="./js/modal.js"></script>
 </body>
 </html>
