@@ -443,6 +443,7 @@
                             class="signup-input"
                             type="email" 
                             name="email" 
+                            id="email"
                             autofocus 
                             placeholder="E-mail"
                             />
@@ -459,8 +460,9 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidde" data-modal>
         <div class="modal">
+
             <button type="button" 
             data-modal-close 
             class="close-btn btn">
@@ -469,8 +471,55 @@
                     </use>
                 </svg>
             </button>
+        
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+            <form action="#" class="modal-form">
+
+                <div class="modal-field">
+                    <label for="user-name" class="input-label"
+                    >Имя</label>
+                    <input type="text"
+                    name="user-name"
+                    id="user-name"
+                    class="modal-input">
+                </div>
+
+                <div class="modal-field">
+                    <label for="user-tel" class="input-label"
+                    >Телефон</label>
+                    <input type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    class="modal-input">
+                </div>
+
+                <div class="modal-field">
+                    <label for="email" class="input-label"
+                    >Почта</label>
+                    <input type="email"
+                    name="email"
+                    id="email"
+                    class="modal-input">
+                </div>
+
+                <div class="modal-field">
+                    <label for="user-text" class="input-label"
+                    >Комментарий</label>
+                    <textarea
+                    name="user-text"
+                    id="user-text"
+                    placeholder="Введите текст"
+                    class="modal-text-input"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn modal-btn">
+                    Отправить
+                </button>
+            </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <!----<script src="./js/modal.js"></script>--->
 </body>
 </html>
