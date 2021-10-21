@@ -904,6 +904,10 @@ body {
     justify-content: center;
     cursor: pointer;
 }
+.check-text:hover,
+.check-text:focus {
+    border-color: var(--accent-color);
+}
 .modal-checkbox:checked + .check-text span {
     background-color: var(--accent-color);
     border: none;
